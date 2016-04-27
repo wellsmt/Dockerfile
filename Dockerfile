@@ -1,3 +1,5 @@
 FROM centos:7
 
-CMD [ "ping", "localhost" ]
+COPY install.sh /
+
+RUN bash install.sh
